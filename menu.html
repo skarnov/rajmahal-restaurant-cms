@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Food Menu</title>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta property="og:title" content="Vide" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="Rajmahal Restaurant" />
+        <script src="js/jquery.min.js"></script>
+        <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,300,200' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/swipebox.css">
+        <script src="js/jquery.swipebox.min.js"></script> 
+        <script type="text/javascript">
+            jQuery(function ($) {
+                $(".swipebox").swipebox();
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="banner">
+            <div class="header-top">
+                <div class="container">
+                    <div class="indicat">
+                        <span><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>31 Allee Paul Lafargue / 27 Av. Chanzy 93320 Les Pabilions Sous Bous. Franch</span>
+                    </div>
+                    <div class="detail">
+                        <ul>
+                            <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> Tel: 01 48 49 67 44, Port: 06 05 82 26 11</li>
+                            <li><i class="glyphicon glyphicon-time" aria-hidden="true"></i> Ouvert 7/7j...11h30-14h30 et 18h30-23h15 </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="navigation navi">
+                    <div class="logo">
+                        <h1><a href="index.html">Rajmahal Restaurant</a></h1>
+                    </div>
+                    <div class="navigation-right">
+                        <span class="menu"><img src="images/menu.png" alt=" " /></span>
+                        <nav class="link-effect-3" id="link-effect-3" style="font-size: 11px;">
+                            <ul class="nav1 nav nav-wil">
+                                <li><a data-hover="Home" href="index.html">Home</a></li>
+                                <li class="active"><a data-hover="Menu" href="menu.html">Menu</a></li>
+                                <li><a data-hover="A" href="a-la-carte.html">A La Carte</a></li>
+                                <li><a data-hover="Livraison" href="livraison-a-domicile.html">Livraison A Domicile</a></li>
+                                <li><a data-hover="Contact" href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <!-- Script-for-menu -->
+                        <script>
+                            $("span.menu").click(function () {
+                                $("ul.nav1").slideToggle(300, function () {
+                                    // Animation complete.
+                                });
+                            });
+                        </script>
+                        <!-- End of script-for-menu -->
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!--Content-->
+        <div class="content">
+            <!--Food Menu-->
+            <div class="gallery-w3l">
+                <div class="container">
+                    <h2 class="tittle"> Our Menu</h2>
+                    <!--                    <div class="gallery-grids">
+                                            <div class="col-sm-6 gallery-grids-left">
+                                                <div class="gallery-grid">
+                                                    <a href="images/g1.jpg" class="b-link-stripe b-animate-go  swipebox">
+                                                        <div class="port-7 effect-3">
+                                                            <div class="image-box">
+                                                                <img src="images/g1.jpg" alt=" "/>
+                                                            </div>
+                                                            <div class="gal-desc">
+                                                                <h4>Sandwich</h4>
+                                                                <a href="#" class="button2 hvr-sweep-to-top">$15.0</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 gallery-grids-left">
+                                                <div class="gallery-grid">
+                                                    <a href="images/g3.jpg" class="b-link-stripe b-animate-go  swipebox">
+                                                        <div class="port-7 effect-3">
+                                                            <div class="image-box">
+                                                                <img src="images/g3.jpg" alt=" "/>
+                                                            </div>
+                                                            <div class="gal-desc">
+                                                                <h4>Pasta</h4>
+                                                                <a href="#" class="button2 hvr-sweep-to-top">$25.0</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 gallery-grids-left pro-top">
+                                                <div class="gallery-grid">
+                                                    <a href="images/g4.jpg" class="b-link-stripe b-animate-go  swipebox">
+                                                        <div class="port-7 effect-3">
+                                                            <div class="image-box">
+                                                                <img src="images/g4.jpg" alt=" "/>
+                                                            </div>
+                                                            <div class="gal-desc">
+                                                                <h4>Seafood</h4>
+                                                                <a href="#" class="button2 hvr-sweep-to-top">$28.0</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 gallery-grids-left pro-top">
+                                                <div class="gallery-grid">
+                                                    <a href="images/g2.jpg" class="b-link-stripe b-animate-go  swipebox">
+                                                        <div class="port-7 effect-3">
+                                                            <div class="image-box">
+                                                                <img src="images/g2.jpg" alt=" "/>
+                                                            </div>
+                                                            <div class="gal-desc">
+                                                                <h4>Roasted</h4>
+                                                                <a href="#" class="button2 hvr-sweep-to-top">$35.0</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 gallery-grids-left pro-top">
+                                                <div class="gallery-grid">
+                                                    <a href="images/g5.jpg" class="b-link-stripe b-animate-go  swipebox">
+                                                        <div class="port-7 effect-3">
+                                                            <div class="image-box">
+                                                                <img src="images/g5.jpg" alt=" "/>
+                                                            </div>
+                                                            <div class="gal-desc">
+                                                                <h4>Chicken </h4>
+                                                                <a href="#" class="button2 hvr-sweep-to-top">$29.0</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 gallery-grids-left pro-top">
+                                                <div class="gallery-grid">
+                                                    <a href="images/g6.jpg" class="b-link-stripe b-animate-go  swipebox">
+                                                        <div class="port-7 effect-3">
+                                                            <div class="image-box">
+                                                                <img src="images/g6.jpg" alt=" "/>
+                                                            </div>
+                                                            <div class="gal-desc">
+                                                                <h4>Fruit Salad</h4>
+                                                                <a href="#" class="button2 hvr-sweep-to-top">$9.0</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>-->
+
+
+                    <div id="main-wrap">
+                        <div class="container">
+                            <div id="wsite-content" class="wsite-elements wsite-not-footer">
+                                <div class="paragraph" style="text-align:left;"><strong><em><font size="6"><font color="#a82e2e">Les Menu</font></font></em></strong>
+                                    <br>
+                                    <br><font size="5"><strong><em><font color="#c23b3b">Menu Midi et Soir 16€90</font></em>
+                                    </strong>
+                                    </font>
+                                    <br><font color="#c23b3b"><strong><font size="3">Entrée</font></strong>
+                                    </font>au choix accompagnée de nan nature ou nan fromage : raïta ou samossa aux légumes ou poulet tandoori ou seekh kebab
+                                    <br><font color="#e05c5c" size="3"><strong>Plat au choix :</strong></font> begun bartha ou agneau curry ou légumes maison ou butter chicken
+                                    <br><font color="#da4444" size="3"><strong>Accompagnement :</strong></font> riz basmati au safran
+                                    <br><font color="#da4444" size="3"><strong>Dessert au choix :</strong></font> tarte aux pommes ou halwa ou goulab jamun ou sorbet (2 boules)
+                                    <br>
+                                    <br><strong><em><font size="5"><a href="http://www.alloresto.fr/restaurant-livraison-a-domicile/restaurant/taj-india/particuliers/carte?s[id_menu]=1302009" style="" title="">Menu enfant</a>&nbsp;&nbsp;<font color="#c23b3b">€ 10,00<br></font></font></em></strong>Poulet tikka ou poulet tandoori ou poulet korma accompagné de riz basmati au safran + frites Dessert au choix : sorbet (2 boules), tarte aux pommes ou halwapoulet tikka ou poulet tandoori ou poulet korma accompagné de riz basmati au safran + frites
+                                    <br>Dessert au choix : sorbet (2 boules), tarte aux pommes ou halwapoulet tikka ou poulet tandoori ou poulet korma accompagné de riz basmati au safran + frites Dessert au choix : sorbet (2 boules), tarte aux pommes
+                                    <br>
+                                    <br>
+                                    <br><a href="http://www.alloresto.fr/restaurant-livraison-a-domicile/restaurant/taj-india/particuliers/carte?s[id_menu]=1302010" style="" title=""><strong><em><font size="5">Menu midi bureau spécia</font></em></strong><font size="5"><strong><em><font color="#c23b3b">l</font></em></strong></font></a>&nbsp; &nbsp;<strong><font size="5"><font color="#c23b3b"><em>12,50 €</em></font></font></strong>
+                                    <br>Une entrée au choix accompagnée de nan nature : raïta ou samossa aux légumes ou oignons baja ou pakora Plat au choix : poulet au curry ou keema motor ou begun bartha ou dall makhani Accompagnement : riz basmati au safran Dessert au choix : tarte aux pommes ou halwa ou salade de fruits ou fruits frais
+                                    <br>
+                                    <br>
+                                    <br><strong><em><font size="5"><font color="#c23b3b">Menu Thali Midi &nbsp; 9€50</font></font></em></strong>
+                                    <br>(sauf dimanches et jours feries)
+                                    <br>
+                                    <br><font size="3"><strong><font color="#e05c5c">Au Choix:</font> </strong>
+                                    </font>poulet tandoori ou sheek kebab ou pakora ou samossa legumes ou poulet curry ou keema matar
+                                    <br><font color="#e05c5c"><font size="3"><strong>avec:</strong></font> </font>Dallmakni, raita, legume accompagne de riz basmati safran
+                                    <br><font color="#e05c5c"><strong><font size="3">Dessert:</font></strong>
+                                    </font>Halwa ou Gulabjamun ou salade de fruits frais.&nbsp;
+                                    <br>
+                                    <br><font size="5" color="#c23b3b"><strong><em>Menu Gastronomique 21</em></strong></font><span style="line-height: 22.3999996185303px;"><font size="5"><strong><em><font color="#c23b3b">€90&nbsp;</font></em></strong></font><br></span>
+                                    <br><strong><em><font size="3"><font color="#da8044">Midi et Soir</font></font></em></strong>
+                                    <br>
+                                    <br><font color="#2a2a2a">Une entree accompagne de nan nature ou nan au fromage ou nan keema ou nan a l'ail</font>
+                                    <br><font color="#e05c5c" size="3"><strong>Au Choix:</strong></font><font color="#2a2a2a"><font size="3"> </font>Mixed pakora (Beignets de tous les legumes a la farine de pois chiche)</font>
+                                    <br><font color="#2a2a2a">ou</font>
+                                    <br><font color="#2a2a2a">Mixed grilles (sheek kebab+poulet tikka+poisson tikka)</font>
+                                    <br>
+                                    <br><font color="#e97676" size="3"><strong>Plat au choix:</strong></font><font color="#2a2a2a"> Poulet shahi korma ou poulet masala ou agneau shahi korma ou agneau masala ou crevettes shahi korma ou crevettes masala ou legume shahi korma ou legume masala ou palak panir</font>
+                                    <br><font color="#2a2a2a">plat accompagne de riz basmati.&nbsp;</font>
+                                    <br>
+                                    <br><font color="#e05c5c" size="3"><strong>Desserts:</strong></font><font color="#2a2a2a"><strong> </strong>Sorbet ou tarte aux pommes ou kulfi ou gulab jamun ou salade de fruits.&nbsp;</font></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--gallery-->
+
+        </div>
+        <!--content-->
+        <!--Footer-->
+        <div class="footer-w3l">
+            <div class="container">
+                <div class="footer-grids">
+                    <div class="col-md-3 footer-grid">
+                        <h4>About</h4>
+                        <ul>
+                            <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>31 Allee Paul Lafargue / 27 Av. Chanzy 93320 Les Pabilions Sous Bous. Franch</li>
+                            <li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i>Tel: 01 48 49 67 44, Port: 06 05 82 26 11</li>
+                        </ul>
+                        <div class="social-icon">
+                            <a href="#"><i class="icon"></i></a>
+                            <a href="#"><i class="icon1"></i></a>
+                            <a href="#"><i class="icon2"></i></a>
+                            <a href="#"><i class="icon3"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 footer-grid">
+                        <div class="col-md-6">
+                            <h4>Popular Items</h4>
+                            <ul>
+                                <li>Meilleures ventes du moment</li>
+                                <li>Menus Midi</li>
+                                <li>Pains Maisons</li>
+                                <li>Salades</li>
+                                <li>Soupes</li>
+                                <li>Beignets</li>
+                                <li>Plats - Poulet</li>
+                                <li>Plats - Agneau</li>
+                                <li>Plats - Poissons</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>&nbsp;</li>
+                                <li>Plats - Legumes</li>
+                                <li>Shaslik Specialities Maisons</li>
+                                <li>Grillades</li>
+                                <li>Biryani</li>
+                                <li>Riz</li>
+                                <li>Desserts</li>
+                                <li>Boissons</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 footer-grid">
+                        <h4> Send Us A Quote</h4>
+                        <form action="#" method="post">
+                            <p>Message</p>
+                            <input type="text" name="Name" placeholder="" required="">
+                            <input type="submit" value="SEND">
+                        </form>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!--Footer-->
+        <div class="copy-section">
+            <div class="container">
+                <div class="footer-top">
+                    <p>&copy; 2017 Rajmahal Restaurant. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

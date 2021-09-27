@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Food Menu</title>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta property="og:title" content="Vide" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="Rajmahal Restaurant" />
+        <script src="js/jquery.min.js"></script>
+        <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,300,200' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/swipebox.css">
+        <script src="js/jquery.swipebox.min.js"></script> 
+        <script type="text/javascript">
+            jQuery(function ($) {
+                $(".swipebox").swipebox();
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="banner">
+            <div class="header-top">
+                    <div class="container">
+                        <div class="indicat">
+                            <span><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>31 Allee Paul Lafargue / 27 Av. Chanzy 93320 Les Pabilions Sous Bous. Franch</span>
+                        </div>
+                        <div class="detail">
+                            <ul>
+                                <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> Tel: 01 48 49 67 44, Port: 06 05 82 26 11</li>
+                                <li><i class="glyphicon glyphicon-time" aria-hidden="true"></i> Ouvert 7/7j...11h30-14h30 et 18h30-23h15 </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            <div class="container">
+                <div class="navigation navi">
+                    <div class="logo">
+                        <h1><a href="index.html">Rajmahal Restaurant</a></h1>
+                    </div>
+                    <div class="navigation-right">
+                        <span class="menu"><img src="images/menu.png" alt=" " /></span>
+                        <nav class="link-effect-3" id="link-effect-3" style="font-size: 11px;">
+                                <ul class="nav1 nav nav-wil">
+                                    <li><a data-hover="Home" href="index.html">Home</a></li>
+                                    <li><a data-hover="Menu" href="menu.html">Menu</a></li>
+                                    <li class="active"><a data-hover="A" href="a-la-carte.html">A La Carte</a></li>
+                                    <li><a data-hover="Livraison" href="livraison-a-domicile.html">Livraison A Domicile</a></li>
+                                    <li><a data-hover="Contact" href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        <!-- Script-for-menu -->
+                        <script>
+                            $("span.menu").click(function () {
+                                $("ul.nav1").slideToggle(300, function () {
+                                    // Animation complete.
+                                });
+                            });
+                        </script>
+                        <!-- End of script-for-menu -->
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!--Content-->
+        <div class="content">
+            <!--Food Menu-->
+            <div class="gallery-w3l">
+                <div class="container">
+                    <h2 class="tittle"> A La Carte</h2>
+                    <!--                    <div class="gallery-grids">
+                                            <div class="col-sm-6 gallery-grids-left">
+                                                <div class="gallery-grid">
+                                                    <a href="images/g1.jpg" class="b-link-stripe b-animate-go  swipebox">
+                                                        <div class="port-7 effect-3">
+                                                            <div class="image-box">
+                                                                <img src="images/g1.jpg" alt=" "/>
+                                                            </div>
+                                                            <div class="gal-desc">
+                                                                <h4>Sandwich</h4>
+                                                                <a href="#" class="button2 hvr-sweep-to-top">$15.0</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 gallery-grids-left">
+                                                <div class="gallery-grid">
+                                                    <a href="images/g3.jpg" class="b-link-stripe b-animate-go  swipebox">
+                                                        <div class="port-7 effect-3">
+                                                            <div class="image-box">
+                                                                <img src="images/g3.jpg" alt=" "/>
+                                                            </div>
+                                                            <div class="gal-desc">
+                                                                <h4>Pasta</h4>
+                                                                <a href="#" class="button2 hvr-sweep-to-top">$25.0</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 gallery-grids-left pro-top">
+                                                <div class="gallery-grid">
+                                                    <a href="images/g4.jpg" class="b-link-stripe b-animate-go  swipebox">
+                                                        <div class="port-7 effect-3">
+                                                            <div class="image-box">
+                                                                <img src="images/g4.jpg" alt=" "/>
+                                                            </div>
+                                                            <div class="gal-desc">
+                                                                <h4>Seafood</h4>
+                                                                <a href="#" class="button2 hvr-sweep-to-top">$28.0</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 gallery-grids-left pro-top">
+                                                <div class="gallery-grid">
+                                                    <a href="images/g2.jpg" class="b-link-stripe b-animate-go  swipebox">
+                                                        <div class="port-7 effect-3">
+                                                            <div class="image-box">
+                                                                <img src="images/g2.jpg" alt=" "/>
+                                                            </div>
+                                                            <div class="gal-desc">
+                                                                <h4>Roasted</h4>
+                                                                <a href="#" class="button2 hvr-sweep-to-top">$35.0</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 gallery-grids-left pro-top">
+                                                <div class="gallery-grid">
+                                                    <a href="images/g5.jpg" class="b-link-stripe b-animate-go  swipebox">
+                                                        <div class="port-7 effect-3">
+                                                            <div class="image-box">
+                                                                <img src="images/g5.jpg" alt=" "/>
+                                                            </div>
+                                                            <div class="gal-desc">
+                                                                <h4>Chicken </h4>
+                                                                <a href="#" class="button2 hvr-sweep-to-top">$29.0</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 gallery-grids-left pro-top">
+                                                <div class="gallery-grid">
+                                                    <a href="images/g6.jpg" class="b-link-stripe b-animate-go  swipebox">
+                                                        <div class="port-7 effect-3">
+                                                            <div class="image-box">
+                                                                <img src="images/g6.jpg" alt=" "/>
+                                                            </div>
+                                                            <div class="gal-desc">
+                                                                <h4>Fruit Salad</h4>
+                                                                <a href="#" class="button2 hvr-sweep-to-top">$9.0</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>-->
+
+                    <div id="main-wrap">
+    <div class="container">
+        <div id="wsite-content" class="wsite-elements wsite-not-footer">
+            <div class="paragraph" style="text-align:left;">
+                <font color="#a82e2e">
+                        <strong>
+                            <em>
+                                <font size="6">Nos Entrées</font>
+                </em>
+                </strong>
+                <br>
+                <strong style="">
+                            <span style=""><br>
+                                <font size="5">Les Pains Maison</font>
+                            </span>
+                        </strong>
+                <br>
+                <span style=""></span>
+                <br>
+                <span style=""></span> Nan nature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 2€00 &nbsp; &nbsp; &nbsp; Pain nature, farine blanche, pate levée
+                <br>
+                <span style=""></span>
+                <br>
+                <span style=""></span> Nan au fromage &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3€50 &nbsp; &nbsp; &nbsp;Pain Farine blanche, fourrée au fromage
+                <br>
+                <span style=""></span>
+                <br>
+                <span style=""></span> Nan à l’ail &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3€00 &nbsp; &nbsp; &nbsp; Pain de blé, à d’ail
+                <br>
+                <span style=""></span>
+                <br>
+                <span style=""></span> KeemaNan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 4€00 &nbsp; &nbsp; &nbsp; Pain Farine blanche, pate levée, fourré de viande d’agneau hachée
+                <br>
+                <span style=""></span>
+                <br>
+                <span style=""></span> Nan aux légumes &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3€75 &nbsp; &nbsp; &nbsp; Pain beurré fourré aux légumes, pate non levée
+                <br>
+                <span style=""></span>
+                <br>
+                <span style=""></span> Paratha &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2€50 &nbsp; &nbsp; &nbsp;Pain beurré, pate non levée
+                <br>
+                <span style=""></span>
+                <br>
+                <span style=""></span> Nan Butter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2€30 &nbsp; &nbsp; &nbsp;Pain beurré à la farine de blé
+                <br>
+                <span style=""></span>
+                <br>
+                <span style=""></span> Nan Kashmiri &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4€00 &nbsp; &nbsp; Galette de farine au levain fourrée aux amandes, coco, sucre et raisins secs.
+                <br>
+                <br>
+                <span style=""></span>
+                <br>
+                <span style=""></span>
+                <strong style="">
+                            <span style="">
+                                <font size="5">Les Salades</font>
+                            </span>
+                        </strong>
+                <br>
+                <span style=""></span>
+                <br>
+                <span style=""></span> Salade maison&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 5€00 &nbsp; &nbsp; &nbsp;Salade verte, concombres, tomates, maïs et olive
+                <br>
+                <span style=""></span>
+                <br>
+                <span style=""></span> Salade aux Poulet&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7€00 &nbsp; &nbsp; Poulet, salade, concombre, tomates, maïs et olives
+                <br>
+                <span style=""></span>
+                <br><span style=""></span>Salade aux crevettes &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;7€50 &nbsp; &nbsp; &nbsp;Crevettes, salade, concombre, tomates, maïs et olives
+                <br>
+                <span style=""></span>
+                <br><span style=""></span>Raïta &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4€00 &nbsp; &nbsp; &nbsp; Yaourt, concombres, tomates et carottes
+                <br>
+                <br>
+                <span style=""></span>
+                <strong style="">
+                            <span style=""><font size="5">Les Soupes</font></span>
+                        </strong>
+                <br>
+                <span style=""></span>
+                <br>
+                <span style=""></span>
+                <strong style="">(Coriandres fraîches, épices indiennes)</strong>
+                <br>
+                <br>
+                <span style=""></span>Soupe aux lentilles &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5€00
+                <br>
+                <span style=""></span>
+                <br><span style=""></span>Soupe aux légumes &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5€25
+                <br>
+                <span style=""></span>
+                <br><span style=""></span>Soupe au poulet &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 7€00
+                <br>
+                <span style=""></span>
+                <br><span style=""></span>Soupe aux crevettes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7€50
+                <br>
+                <span style=""></span>
+                <br><span style=""></span><font size="6"><strong>Beignets</strong><br></font>
+                <span style=""></span>
+                <br><span style=""></span>Mixed Pakora&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5€50 &nbsp; &nbsp; &nbsp;Beignets de tous les légumes à la farine de pois chiche
+                <br>
+                <span style=""></span>
+                <br><span style=""></span>AluPakora&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4€00 &nbsp; &nbsp; &nbsp;Beignet de P.de terre, farine de pois chiche, herbes épicés
+                <br><span style=""></span>
+                <br><span style=""></span>BegunPakora&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4€50 &nbsp; &nbsp; &nbsp;Beignet d’aubergine, farine de pois chiche et herbes épicés
+                <br><span style=""></span>
+                <br><span style=""></span>Oignons Bhaja&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4€00 &nbsp; &nbsp; Beignet d’oignons, farine de pois chiche et herbes épicés
+                <br><span style=""></span>
+                <br><span style=""></span>Samossa aux légumes &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5€00 &nbsp; &nbsp; Légumes aux épices enveloppées puis baigné
+                <br><span style=""></span>
+                <br><span style=""></span>Samossa à la viande &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;6€00 &nbsp; &nbsp; Viande d’agneau hachée, épices, enveloppées puis baigné
+                <br>
+                <br><span style=""></span>Crevettes Pakora &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5€50 &nbsp; &nbsp; Beignet de Crevettes à la farine de pois chiche, herbes et épices
+                <br><span style=""></span>
+                <br><span style=""></span>Poulet Pakora &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5€00 &nbsp; &nbsp;Beignet de Poulet à la farine de pois chiche, herbes et épices
+                <br><span style=""></span>
+                <br>Mixed beignets (pour 1 ou 2 personnes) &nbsp;6€00 /11€50 &nbsp; &nbsp;Beignet de Mixed Pakora,Crevettes, Oignons, Aubergine, Alu et Poulet Pakora.
+                <br><span style=""></span>
+                <br><span style=""></span><strong style=""><span style="">&nbsp;</span></strong>
+                <br><span style=""></span>
+                <br><span style=""></span><strong style=""><span style=""><font size="5">Les Grillades</font></span></strong>
+                <br><span style=""></span>
+                <br><span style=""></span>Poulet Tandoori&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6€00 &nbsp; &nbsp; &nbsp;Cuisse de poulet marinée aux épices et grillée au tandoor
+                <br><span style=""></span>
+                <br><span style=""></span>Poulet Tikka &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 7€00 &nbsp; &nbsp; &nbsp;Morceaux de poulet blanc marinés aux épices puis cuit au tandoor
+                <br><span style=""></span>
+                <br><span style=""></span>Agneau Tikka &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 8€00 &nbsp; &nbsp; &nbsp;Morceaux d’agneau marinés aux épices puis cuit au tandoor
+                <br><span style=""></span>
+                <br><span style=""></span>Seekh Kebab &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 6€00 &nbsp; &nbsp; &nbsp;Agneau haché, oignons, menthes, coriandres et épices grillé au tandoor
+                <br><span style=""></span>
+                <br><span style=""></span>Canard Tikka &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;8€50 &nbsp; &nbsp; &nbsp; Morceaux de canard marinés aux épices puis cuit au tandoor
+                <br><span style=""></span>
+                <br><span style=""></span>Poisson Tikka&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7€50 &nbsp; &nbsp; &nbsp;Poisson mariné aux épices puis cuit au tandoor
+                <br><span style=""></span>
+                <br><span style=""></span>Gambas Tandoori &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 16€00 &nbsp; &nbsp; Gambas décortiquées, émincées en sauce et grillées au tandoor
+                <br><span style=""></span>
+                <br><span style=""></span>Mixed Grilles (Pour 1 ou 2 Personnes) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;12€50&nbsp;/24€00 &nbsp; &nbsp; &nbsp; Seekh Kebab, Poulet Tikka, poisson tikka, agneau tikka et Gambas Tandoori
+                <br><span style=""></span>
+                <br><span style=""></span><strong style=""><span style=""><font size="5">Les Shaslik</font></span></strong>
+                <br><span style=""></span>
+                <br><span style=""></span>Poulet Shaslik &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;13€ &nbsp; &nbsp; &nbsp; &nbsp;Blanc de volaille mariné dans une sauce au yaourt et ses épices, avec poivron et oignons.
+                <br><span style=""></span>
+                <br><span style=""></span>Agneau Shaslik &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;13€50&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Viande d’agneau mariné dans une sauce au yaourt et ses épices, avec poivron et oignons.
+                <br><span style=""></span>
+                <br><span style=""></span>Canard Shaslik &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;13€50 &nbsp; &nbsp; &nbsp; Morceaux de canard mariné dans une sauce au yaourt et ses épices, avec poivron et oignons.
+                <br><span style=""></span>
+                <br><span style=""></span>Poisson Shaslik &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;13€00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Filet de saumon mariné dans une sauce au yaourt et ses épices, avec poivron et oignons.
+                <br>
+                </font><span style=""></span>
+                <br>
+                <br><strong><font size="6"><font color="#a82e2e">Plats - poulet</font></font></strong>
+                <ul style="">
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302059&amp;s[id_restaurant]=6893" style="" title="">Poulet au curry</a>Morceaux de poulet au curry traditionnel
+                        <br>9,00 €
+                        <br><span style=""></span>
+                        <br><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302060&amp;s[id_restaurant]=6893" style="" title="">Poulet shahi korma</a>Morceaux de poulet à la noix de coco, noix de cajou, raisins secs et crème fraîche
+                        <br>11,00 €
+                        <br><span style=""></span>
+                        <br><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302061&amp;s[id_restaurant]=6893" style="" title="">Poulet vindaloo</a>Morceaux de poulet et pommes de terre - relevée
+                        <br>10,00 €
+                        <br><span style=""></span>
+                        <br><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302062&amp;s[id_restaurant]=6893" style="" title="">Poulet madras</a>Morceaux de poulet et sauce parfumée pouvant être relevée
+                        <br>9,50 €
+                        <br><span style=""></span>
+                        <br><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302063&amp;s[id_restaurant]=6893" style="" title="">Poulet massala</a>Morceaux de poulet sauce aux tomates,
+                        <br>11,00 €
+                        <br><span style=""></span>
+                        <br><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302064&amp;s[id_restaurant]=6893" style="" title="">Poulet tikka massala</a>Morceaux de polet marinés aux épices puis cuit au tandoor
+                        <br>12,00 €
+                        <br><span style=""></span>
+                        <br><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302065&amp;s[id_restaurant]=6893" style="" title="">Butter chicken</a>Poulet au beurre, coco, amandes et cajou grillé au tandoori
+                        <br>12,00 €
+                        <br>
+                    </li>
+                    <li style=""><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302067&amp;s[id_restaurant]=6893" style="" title="">Poulet kashmiri</a>Morceaux de poulet tikka aux fruits secs, sauce aux noix de cajou, amandes, crème fraîche
+                        <br>11,50 €</li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302068&amp;s[id_restaurant]=6893" title="" style="line-height: 1.6; background-color: initial;">Poulet </a><font color="#da4444" style="line-height: 1.6; background-color: initial;">Taj</font><span style="line-height: 1.6; background-color: initial;">&nbsp;</span><span style="line-height: 1.6; background-color: initial;">Spécialité du chef</span>
+                        <br>
+                    </li>
+                </ul><span style="line-height: 1.6; background-color: initial;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 14,00 €&nbsp;</span>
+                <br><span style="line-height: 1.6; background-color: initial;"><br></span>
+                <br><span style="line-height: 1.6; background-color: initial;"><br></span>
+                <br><font size="6"><font color="#c23b3b"><strong><em>Plats - agneau</em></strong></font></font>
+                <ul style="">
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302078&amp;s[id_restaurant]=6893" style="" title="">Agneau au curry</a>Curry d'agneau légèrement épicé
+                        <br>10,00 €
+                        <br><span style=""></span>
+                        <br><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302079&amp;s[id_restaurant]=6893" style="" title="">Agneau shahi korma</a>Morceaux d'agneau à la noix de coco, noix de cajou, raisins secs et crème fraîche
+                        <br>12,50 €
+                        <br><span style=""></span>
+                        <br><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302080&amp;s[id_restaurant]=6893" style="" title="">Agneau vindaloo</a>Curry de gigot d'agneau aux pommes de terre - relevée
+                        <br>11,00 €
+                        <br><span style=""></span>
+                        <br><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302081&amp;s[id_restaurant]=6893" style="" title="">Agneau madras</a>Morceaux d'agneau et sauce parfumée pouvant être relevée
+                        <br>10,50 €
+                        <br><span style=""></span>
+                        <br><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302082&amp;s[id_restaurant]=6893" style="" title="">Agneau aux epinards</a>Curry d'agneau avec epinards</li>
+                    <li style="">11,50 €
+                        <br><span style=""></span>
+                        <br><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302083&amp;s[id_restaurant]=6893" style="" title="">Dal gost</a>Agneau préparé aux lentilles et ses épices parfumées
+                        <br>11,50 €
+                        <br><span style=""></span>
+                        <br><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302084&amp;s[id_restaurant]=6893" style="" title="">Agneau aubergines</a>Morceaux de gigot d'agneau et aubergines au curry
+                        <br>11,50 €
+                        <br>
+                    </li>
+                    <li style=""><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302086&amp;s[id_restaurant]=6893" style="" title="">Agneau tikka massala</a>Grilles d'agneau désossé en sauce aux épices
+                        <br>13,00 €
+                        <br><span style=""></span>
+                        <br><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302087&amp;s[id_restaurant]=6893" style="" title="">Keema matar</a>Viande d'agneau hachée, petits pois, sauce aux oignons et tomates
+                        <br>9,00 €&nbsp;
+                        <br>
+                    </li>
+                </ul>
+                <br>
+                <br><font size="6" style="background-color: initial;"><strong><em>   
+                        </em></strong>
+                        </font>
+                <strong><em><font size="6"><font color="#c23b3b">Plats - poissons</font></font></em></strong>
+                <ul style="">
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302069&amp;s[id_restaurant]=6893" title="" style="line-height: 1.6; background-color: initial;">Poisson shahi korma</a><span style="line-height: 1.6; background-color: initial;">Morceaux de poisson à la noix de coco, noix de cajou, raisins secs, crème fraîche</span></li>
+                    <li style="">11,00&nbsp;<span style="line-height: 22.3999996185303px;">€</span></li>
+                </ul>
+                <ul style="">
+                    <li style=""><span style=""></span>
+                        <br><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302071&amp;s[id_restaurant]=6893" title="" style="">Poisson massala</a>Grillade de poisson cuit en sauce aux tomates et ses épices parfumées</li>
+                    <li style="">12,00 €
+                        <br><span style=""></span>
+                        <br><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302072&amp;s[id_restaurant]=6893" title="" style="">Crevettes shahi korma</a>Crevettes décortiquées à la noix de coco, noix de cajou, raisins secs, crème fraîche
+                        <br>11,50 €
+                        <br><span style=""></span>
+                        <br><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302073&amp;s[id_restaurant]=6893" title="" style="">Crevettes à la menthe</a>Crevettes à la sauce avec menthe, tomates et noix de coco&nbsp;
+                        <br>12,00 €
+                        <br><span style=""></span>
+                        <br><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302074&amp;s[id_restaurant]=6893" title="" style="">Crevettes massala</a>Crevettes décortiquées et sauce aux tomates et ses épices parfumées&nbsp;
+                        <br>12,50 €
+                        <br><span style=""></span>
+                        <br><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302075&amp;s[id_restaurant]=6893" title="" style="">Crevettes aux epinards</a>Crevettes décortiquées et epinards cuit au curry
+                        <br>12,50 €
+                        <br><span style=""></span>
+                        <br><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302076&amp;s[id_restaurant]=6893" title="" style="">Gambas massala</a>Gambas grillés et cuit en sauce aux tomates et ses épices parfumées
+                        <br>19,00 €
+                        <br><span style=""></span>
+                        <br><span style=""></span></li>
+                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302077&amp;s[id_restaurant]=6893" title="" style="">Gambas </a><font color="#da4444">Taj&nbsp;</font>Spécialité du chef
+                        <br>22,00 €
+                        <br><span style=""></span>
+                        <br>
+                        <br>
+                    </li>
+                </ul>
+                <ul style="">
+                    <li style=""><strong><em><font size="6"><font color="#c23b3b">Plats aux légumes</font></font></em></strong>
+                        <ul style="">
+                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302093&amp;s[id_restaurant]=6893" style="" title="">Légumes curry</a>Plusieurs légumes sauce écrémée avec épices parfumées
+                                <br>7,00 €
+                                <br><span style=""></span>
+                                <br><span style=""></span></li>
+                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302094&amp;s[id_restaurant]=6893" style="" title="">Légumes maison</a>Légumes, lentilles, oeuf, noix de cajou, noix de coco, raisins secs, crème fraîche
+                                <br>7,50 €
+                                <br><span style=""></span>
+                                <br><span style=""></span></li>
+                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302095&amp;s[id_restaurant]=6893" style="" title="">Légumes korma</a>Légumes à la noix de coco, noix de cajou, raisins secs et crème fraîche
+                                <br>7,50 €
+                                <br>
+                            </li>
+                            <li style=""><span style=""></span></li>
+                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302097&amp;s[id_restaurant]=6893" style="" title="">Begun bartha</a>Purée d'aubergines grillées au tandoor avec ses épices
+                                <br>7,50 €
+                                <br><span style=""></span>
+                                <br><span style=""></span></li>
+                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302098&amp;s[id_restaurant]=6893" style="" title="">Dall makhani</a>Lentilles indiennes cuit façon traditionnelle
+                                <br>7,00 €
+                                <br><span style=""></span>
+                                <br><span style=""></span></li>
+                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302099&amp;s[id_restaurant]=6893" style="" title="">Alu gobi</a>Choux-fleurs, pommes de terre et ses épices
+                                <br>7,00 €
+                                <br><span style=""></span>
+                                <br><span style=""></span></li>
+                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302100&amp;s[id_restaurant]=6893" style="" title="">Alu motor</a>Pommes de terre et petits pois à l'épice
+                                <br>7,00 €
+                                <br>
+                            </li>
+                            <li style=""><span style=""></span>
+                                <br><span style=""></span></li>
+                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302102&amp;s[id_restaurant]=6893" style="" title="">Alu palak</a>Epinards et pommes de terre aux épices
+                                <br>6,50 €
+                                <br><span style=""></span>
+                                <br><span style=""></span></li>
+                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302103&amp;s[id_restaurant]=6893" style="" title="">Motor panir</a>Petits pois à la sauce au fromage
+                                <br>7,50 €
+                                <br>
+                            </li>
+                            <li style=""><span style=""></span>
+                                <br><span style=""></span></li>
+                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302105&amp;s[id_restaurant]=6893" style="" title="">Palak paneer</a>Epinards et fromage dans une sauce indienne
+                                <br>7,00 €
+                                <br><span style=""></span>
+                                <br>
+                                <br>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul style="">
+                    <li style="">
+                        <ul style="">
+                            <li style=""><strong><em><font size="6"><font color="#c23b3b">Riz</font></font></em></strong>
+                                <ul style="">
+                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302113&amp;s[id_restaurant]=6893" style="" title="">Riz basmati nature</a>
+                                        <br>3,00 €
+                                        <br><span style=""></span>
+                                        <br><span style=""></span></li>
+                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302114&amp;s[id_restaurant]=6893" style="" title="">Riz basmati safran</a>
+                                        <br>3,50 €
+                                        <br><span style=""></span>
+                                        <br><span style=""></span></li>
+                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302115&amp;s[id_restaurant]=6893" style="" title="">Riz oeuf</a>Petits pois avec des oeufs
+                                        <br>4,50 €
+                                        <br><span style=""></span>
+                                        <br><span style=""></span></li>
+                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302116&amp;s[id_restaurant]=6893" style="" title="">Riz motor</a>Riz basmati préparé avec petits pois et ses épices verts
+                                        <br>4,00 €
+                                        <br><span style=""></span>
+                                        <br><span style=""></span></li>
+                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302117&amp;s[id_restaurant]=6893" style="" title="">Riz kashmiri</a>Riz basmati avec fruits secs
+                                        <br>4,50 €
+                                        <br>
+                                        <br>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul style="">
+                    <li style="">
+                        <ul style="">
+                            <li style="">
+                                <ul style="">
+                                    <li style=""><strong><em><font size="6"><font color="#c23b3b">Biryanis</font></font></em></strong>&nbsp;</li>
+                                    <li style="">(plats complets)Riz préparé avec poulet, agneau, crevettes et légumes avec ses 25 épices
+                                        <br><span style=""></span>
+                                        <br><span style=""></span>
+                                        <ul style="">
+                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302106&amp;s[id_restaurant]=6893" style="" title="">Biryani poulet</a>
+                                                <br>11,50 €
+                                                <br><span style=""></span>
+                                                <br><span style=""></span></li>
+                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302107&amp;s[id_restaurant]=6893" style="" title="">Biryani poulet tikka</a>
+                                                <br>12,50 €
+                                                <br><span style=""></span>
+                                                <br><span style=""></span></li>
+                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302108&amp;s[id_restaurant]=6893" style="" title="">Biryani agneau</a>
+                                                <br>12,50 €
+                                                <br><span style=""></span>
+                                                <br><span style=""></span></li>
+                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302109&amp;s[id_restaurant]=6893" style="" title="">Biryani agneau tikka</a>
+                                                <br>14,00 €
+                                                <br><span style=""></span>
+                                                <br><span style=""></span></li>
+                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302110&amp;s[id_restaurant]=6893" style="" title="">Biryani crevettes</a>
+                                                <br>14,00 €
+                                                <br><span style=""></span>
+                                                <br><span style=""></span></li>
+                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302111&amp;s[id_restaurant]=6893" style="" title="">Biryani légumes</a>
+                                                <br>10,00 €
+                                                <br><span style=""></span>
+                                                <br><span style=""></span></li>
+                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302112&amp;s[id_restaurant]=6893" style="" title="">Biryani royal</a>
+                                                <br>16,00 €
+                                                <br><span style=""></span>
+                                                <br>
+                                                <br>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul style="">
+                    <li style="">
+                        <ul style="">
+                            <li style="">
+                                <ul style="">
+                                    <li style="">
+                                        <ul style="">
+                                            <li style=""><strong><em><font size="6"><font color="#c23b3b">Desserts</font></font></em></strong>
+                                                <ul style="">
+                                                    <li style=""><a href="http://www.alloresto.fr/restaurant-livraison-a-domicile/restaurant/taj-india/particuliers/carte?s[id_menu]=1302118" style="" title="">Kulfi</a>Glace indienne aux pistaches ou mangue et épices parfumées
+                                                        <br>5,50 €
+                                                        <br><span style=""></span>
+                                                        <br><span style=""></span></li>
+                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302119&amp;s[id_restaurant]=6893" style="" title="">Halwa</a>Gâteau de semoule aux noix de coco et noix de cajou
+                                                        <br>4,00 €
+                                                        <br><span style=""></span>
+                                                        <br><span style=""></span></li>
+                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302120&amp;s[id_restaurant]=6893" style="" title="">Goulab jamun</a>Pâtisserie indienne (lait en poudre, crème fraîche, noix de coco et parfums indiens)
+                                                        <br>4,50 €
+                                                        <br><span style=""></span>
+                                                        <br><span style=""></span></li>
+                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302121&amp;s[id_restaurant]=6893" style="" title="">Salade de fruits frais</a>Fruits exotiques
+                                                        <br>5,00 €
+                                                        <br><span style=""></span>
+                                                        <br><span style=""></span></li>
+                                                    <li style=""><a href="http://www.alloresto.fr/restaurant-livraison-a-domicile/restaurant/taj-india/particuliers/carte?s[id_menu]=1302122" style="" title="">Mystère</a>Vanille ou mangue
+                                                        <br><span style=""></span>
+                                                        <br><span style=""></span><a href="http://www.alloresto.fr/restaurant-livraison-a-domicile/restaurant/taj-india/particuliers/carte?s[id_menu]=1302122" style="" title="">Choisir les options du menu</a>
+                                                        <br>4,50 €
+                                                        <br><span style=""></span>
+                                                        <br><span style=""></span></li>
+                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302123&amp;s[id_restaurant]=6893" style="" title="">Tarte aux pommes</a>
+                                                        <br>4,50 €
+                                                        <br><span style=""></span>
+                                                        <br><span style=""></span></li>
+                                                    <li style=""><a href="http://www.alloresto.fr/restaurant-livraison-a-domicile/restaurant/taj-india/particuliers/carte?s[id_menu]=1302124" style="" title="">Sorbet (3 boules)</a>
+                                                        <br>5,00 €
+                                                        <br><span style=""></span>
+                                                        <br><span style=""></span></li>
+                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302125&amp;s[id_restaurant]=6893" style="" title="">Coupe colonel</a>Sorbet citron vert avec vodka
+                                                        <br>7,50 €
+                                                        <br><span style=""></span>
+                                                        <br><span style=""></span></li>
+                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302126&amp;s[id_restaurant]=6893" style="" title="">Coupe malibu</a>Sorbet noix de coco et malibu
+                                                        <br>7,50 €
+                                                        <br><span style=""></span>
+                                                        <br><span style=""></span></li>
+                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302127&amp;s[id_restaurant]=6893" style="" title="">Café liégeois</a>Glace café, sauce café, chantilly
+                                                        <br>7,50 €
+                                                        <br><strong style="line-height: 1.6; background-color: initial;"><em><font size="5"><font color="#c23b3b"><br><br>Lassi</font></font></em></strong><span style="line-height: 1.6; background-color: initial;">&nbsp;</span>
+                                                        <br>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul style="">
+                    <li style="">
+                        <ul style="">
+                            <li style="">
+                                <ul style="">
+                                    <li style="">
+                                        <ul style="">
+                                            <li style="">
+                                                <ul style="">
+                                                    <li style="">(boissons indiennes)
+                                                        <ul style="">
+                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302128&amp;s[id_restaurant]=6893" style="" title="">Lassi nature 50 cl</a>
+                                                                <br>3,50 €
+                                                                <br><span style=""></span>
+                                                                <br><span style=""></span></li>
+                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302129&amp;s[id_restaurant]=6893" style="" title="">Lassi salé 50 cl</a>
+                                                                <br>3,50 €
+                                                                <br><span style=""></span>
+                                                                <br><span style=""></span></li>
+                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302130&amp;s[id_restaurant]=6893" style="" title="">Lassi sucré 50 cl</a>
+                                                                <br>3,50 €
+                                                                <br><span style=""></span>
+                                                                <br><span style=""></span></li>
+                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302131&amp;s[id_restaurant]=6893" style="" title="">Lassi menthe 50 cl</a>
+                                                                <br>3,50 €
+                                                                <br><span style=""></span>
+                                                                <br><span style=""></span></li>
+                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302132&amp;s[id_restaurant]=6893" style="" title="">Lassi mangue 50 cl</a>
+                                                                <br>4,50 €
+                                                                <br><span style=""></span>
+                                                                <br><span style=""></span></li>
+                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302133&amp;s[id_restaurant]=6893" style="" title="">Lassi rose 50 cl</a>
+                                                                <br>4,50 €
+                                                                <br><span style=""></span>
+                                                                <br><span style=""></span></li>
+                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302134&amp;s[id_restaurant]=6893" style="" title="">Lassi banane 50 cl</a>
+                                                                <br>4,50 €
+                                                                <br><span style=""></span>
+                                                                <br><span style=""></span></li>
+                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302135&amp;s[id_restaurant]=6893" style="" title="">Lassi epicé 50 cl</a>
+                                                                <br>4,50 €&nbsp;
+                                                                <br>
+                                                                <br>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul style="">
+                    <li style="">
+                        <ul style="">
+                            <li style="">
+                                <ul style="">
+                                    <li style="">
+                                        <ul style="">
+                                            <li style="">
+                                                <ul style="">
+                                                    <li style="">
+                                                        <ul style="">
+                                                            <li style=""><strong><em><font size="6"><font color="#c23b3b">Boissons sans alcools</font></font></em></strong>
+                                                                <ul style="">
+                                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302136&amp;s[id_restaurant]=6893" style="" title="">Coca-cola 33 cl</a>
+                                                                        <br>2,00 €
+                                                                        <br><span style=""></span>
+                                                                        <br><span style=""></span></li>
+                                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302137&amp;s[id_restaurant]=6893" style="" title="">Coca-cola light 33 cl</a>
+                                                                        <br>2,00 €
+                                                                        <br><span style=""></span>
+                                                                        <br><span style=""></span></li>
+                                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302138&amp;s[id_restaurant]=6893" style="" title="">Coca-cola zero 33 cl</a>
+                                                                        <br>2,00 €
+                                                                        <br><span style=""></span>
+                                                                        <br><span style=""></span></li>
+                                                                    <li style="">Coca-cola 1&nbsp;
+                                                                        <br>3,50 €
+                                                                        <br><span style=""></span>
+                                                                        <br><span style=""></span></li>
+                                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302140&amp;s[id_restaurant]=6893" style="" title="">Coca-cola 2&nbsp;</a>
+                                                                        <br>5,00 €
+                                                                        <br><span style=""></span>
+                                                                        <br><span style=""></span></li>
+                                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302141&amp;s[id_restaurant]=6893" style="" title="">Sprite 33 cl</a>
+                                                                        <br>2,00 €
+                                                                        <br><span style=""></span>
+                                                                        <br><span style=""></span></li>
+                                                                    <li style="">
+                                                                        <br><span style=""></span></li>
+                                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302143&amp;s[id_restaurant]=6893" style="" title="">Jus d'orange 25 cl</a>
+                                                                        <br>2,00 €
+                                                                        <br><span style=""></span>
+                                                                        <br><span style=""></span></li>
+                                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302144&amp;s[id_restaurant]=6893" style="" title="">Jus d'ananas 25 cl</a>
+                                                                        <br>2,00 €&nbsp;</li>
+                                                                    <li style=""><span style=""></span>
+                                                                        <br><span style=""></span></li>
+                                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302146&amp;s[id_restaurant]=6893" style="" title="">Jus d'abricot 25 cl</a>
+                                                                        <br>2,00 €
+                                                                        <br><span style=""></span>
+                                                                        <br><span style=""></span></li>
+                                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302147&amp;s[id_restaurant]=6893" style="" title="">Jus de mangue 25 cl</a>
+                                                                        <br>2,00 €
+                                                                        <br><span style=""></span>
+                                                                        <br><span style=""></span></li>
+                                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302148&amp;s[id_restaurant]=6893" style="" title="">Orangina 25 cl</a>
+                                                                        <br>2,00 €
+                                                                        <br><span style=""></span>
+                                                                        <br><span style=""></span></li>
+                                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302149&amp;s[id_restaurant]=6893" style="" title="">Ice tea 25 cl</a>
+                                                                        <br>2,00 €
+                                                                        <br><span style=""></span>
+                                                                        <br><span style=""></span></li>
+                                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302150&amp;s[id_restaurant]=6893" style="" title="">Schweppes indian tonic 25 cl</a>
+                                                                        <br>2,00 €
+                                                                        <br><span style=""></span>
+                                                                        <br><span style=""></span></li>
+                                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302151&amp;s[id_restaurant]=6893" style="" title="">Perrier 33 cl</a>
+                                                                        <br>2,00 €
+                                                                        <br><span style=""></span>
+                                                                        <br><span style=""></span></li>
+                                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302152&amp;s[id_restaurant]=6893" style="" title="">Vittel 50 cl</a>
+                                                                        <br>2,00 €
+                                                                        <br><span style=""></span>
+                                                                        <br><span style=""></span></li>
+                                                                    <li style="">
+                                                                        <br><span style=""></span></li>
+                                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302154&amp;s[id_restaurant]=6893" style="" title="">Badoit 50 cl</a>
+                                                                        <br>2,00 €
+                                                                        <br><span style=""></span>
+                                                                        <br><span style=""></span></li>
+                                                                    <li style="">
+                                                                        <br><span style=""></span>
+                                                                        <br><span style=""></span></li>
+                                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302156&amp;s[id_restaurant]=6893" style="" title="">Vittel 1&nbsp;</a>
+                                                                        <br>3,00 €
+                                                                        <br><span style=""></span>
+                                                                        <br><span style=""></span></li>
+                                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302157&amp;s[id_restaurant]=6893" style="" title="">Evian 1&nbsp;</a>
+                                                                        <br>3,00 €
+                                                                        <br><span style=""></span>
+                                                                        <br><span style=""></span></li>
+                                                                    <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302158&amp;s[id_restaurant]=6893" style="" title="">Badoit 1</a>
+                                                                        <br>3,00 €
+                                                                        <br>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul style="">
+                    <li style="">
+                        <ul style="">
+                            <li style="">
+                                <ul style="">
+                                    <li style="">
+                                        <ul style="">
+                                            <li style="">
+                                                <ul style="">
+                                                    <li style="">
+                                                        <ul style="">
+                                                            <li style="">
+                                                                <ul style="">
+                                                                    <li style=""><strong><em><font size="5"><font color="#c23b3b">Boissons alcoolisées</font></font></em></strong>
+                                                                        <ul style="">
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302160&amp;s[id_restaurant]=6893" style="" title="">Saumur champigny a.o.c 37,5 cl</a>
+                                                                                <br>10.00€
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302170&amp;s[id_restaurant]=6893" style="" title="">Côtes de provence a.o.c 37,5 cl</a>
+                                                                                <br>8,50 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302176&amp;s[id_restaurant]=6893" style="" title="">Muscadet a.o.c 37,5 cl</a>
+                                                                                <br>8,50 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302180&amp;s[id_restaurant]=6893" style="" title="">Vin india rouge a.o.c 37,5 cl</a>
+                                                                                <br>12,00 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302184&amp;s[id_restaurant]=6893" style="" title="">Champagne nicolas feuillat a.o.c 37,5 cl</a>
+                                                                                <br>30,00 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302161&amp;s[id_restaurant]=6893" style="" title="">Saumur champigny a.o.c 75 cl</a>
+                                                                                <br>18,00 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302171&amp;s[id_restaurant]=6893" style="" title="">Côtes de provence a.o.c 75 cl</a>
+                                                                                <br>15,50 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302177&amp;s[id_restaurant]=6893" style="" title="">Muscadet a.o.c 75 cl</a>
+                                                                                <br>15,00 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302181&amp;s[id_restaurant]=6893" style="" title="">Vin india rouge a.o.c 75 cl</a>
+                                                                                <br>20,00 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302185&amp;s[id_restaurant]=6893" style="" title="">Champagne nicolas feuillat a.o.c 75 cl</a>
+                                                                                <br>45,00 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302162&amp;s[id_restaurant]=6893" style="" title="">Brouilly a.o.c 37,5 cl</a>
+                                                                                <br>11,00 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302172&amp;s[id_restaurant]=6893" style="" title="">Bandol a.o.c 37,5 cl</a>
+                                                                                <br>10,50 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302178&amp;s[id_restaurant]=6893" style="" title="">Sancerre 37,5 cl</a>
+                                                                                <br>13,00 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302182&amp;s[id_restaurant]=6893" style="" title="">Vin rosé 37,5 a.o.c 37,5 cl</a>
+                                                                                <br>10,00 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302163&amp;s[id_restaurant]=6893" style="" title="">Brouilly a.o.c 75 cl</a>
+                                                                                <br>18,50 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302173&amp;s[id_restaurant]=6893" style="" title="">Bandol a.o.c 75 cl</a>
+                                                                                <br>11,50 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302179&amp;s[id_restaurant]=6893" style="" title="">Sancerre 75 cl</a>
+                                                                                <br>18,50 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302183&amp;s[id_restaurant]=6893" style="" title="">Vin rosé a.o.c 75 cl</a>
+                                                                                <br>15,50 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302164&amp;s[id_restaurant]=6893" style="" title="">Saint-emilion a.o.c 37,5 cl</a>
+                                                                                <br>14,00 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302174&amp;s[id_restaurant]=6893" style="" title="">Tavel a.o.c 37,5 cl</a>
+                                                                                <br>11,00 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302165&amp;s[id_restaurant]=6893" style="" title="">Saint-emilion a.o.c 75 cl</a>
+                                                                                <br>26,00 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302175&amp;s[id_restaurant]=6893" style="" title="">Tavel a.o.c 75 cl</a>
+                                                                                <br>19,00 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302166&amp;s[id_restaurant]=6893" style="" title="">Bourgeuil a.o.c 37,5 cl</a>
+                                                                                <br>9,00 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302167&amp;s[id_restaurant]=6893" style="" title="">Bourgeuil a.o.c 75 cl</a>
+                                                                                <br>15,50 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302168&amp;s[id_restaurant]=6893" style="" title="">Médoc a.o.c 37,5 cl</a>
+                                                                                <br>13,00 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                            <li style=""><a href="http://www.alloresto.fr/?module=carts&amp;func=add_items_in_cart&amp;items[plat][moduleid]=691&amp;items[plat][itemtype]=113&amp;items[plat][itemid]=1302169&amp;s[id_restaurant]=6893" style="" title="">Médoc a.o.c 75 cl</a>
+                                                                                <br>24,00 €
+                                                                                <br><span style=""></span>
+                                                                                <br><span style=""></span></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul style="">
+                    <li style="">
+                        <ul style="">
+                            <li style="">
+                                <ul style="">
+                                    <li style="">
+                                        <ul style="">
+                                            <li style="">
+                                                <ul style="">
+                                                    <li style="">
+                                                        <ul style="">
+                                                            <li style=""><span style=""></span></li>
+                                                        </ul><span style=""></span></li>
+                                                </ul><span style=""></span></li>
+                                        </ul>
+                                    </li><span style=""></span></ul><span style=""></span></li>
+                        </ul><span style=""></span></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+                </div>
+            </div>
+
+            <!--gallery-->
+
+        </div>
+        <!--content-->
+       <!--Footer-->
+        <div class="footer-w3l">
+            <div class="container">
+                <div class="footer-grids">
+                    <div class="col-md-3 footer-grid">
+                        <h4>About</h4>
+                        <ul>
+                            <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>31 Allee Paul Lafargue / 27 Av. Chanzy 93320 Les Pabilions Sous Bous. Franch</li>
+                            <li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i>Tel: 01 48 49 67 44, Port: 06 05 82 26 11</li>
+                        </ul>
+                        <div class="social-icon">
+                            <a href="#"><i class="icon"></i></a>
+                            <a href="#"><i class="icon1"></i></a>
+                            <a href="#"><i class="icon2"></i></a>
+                            <a href="#"><i class="icon3"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 footer-grid">
+                        <div class="col-md-6">
+                            <h4>Popular Items</h4>
+                            <ul>
+                                <li>Meilleures ventes du moment</li>
+                                <li>Menus Midi</li>
+                                <li>Pains Maisons</li>
+                                <li>Salades</li>
+                                <li>Soupes</li>
+                                <li>Beignets</li>
+                                <li>Plats - Poulet</li>
+                                <li>Plats - Agneau</li>
+                                <li>Plats - Poissons</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>&nbsp;</li>
+                                <li>Plats - Legumes</li>
+                                <li>Shaslik Specialities Maisons</li>
+                                <li>Grillades</li>
+                                <li>Biryani</li>
+                                <li>Riz</li>
+                                <li>Desserts</li>
+                                <li>Boissons</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 footer-grid">
+                        <h4> Send Us A Quote</h4>
+                        <form action="#" method="post">
+                            <p>Message</p>
+                            <input type="text" name="Name" placeholder="" required="">
+                            <input type="submit" value="SEND">
+                        </form>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!--Footer-->
+        <div class="copy-section">
+            <div class="container">
+                <div class="footer-top">
+                    <p>&copy; 2017 Rajmahal Restaurant. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

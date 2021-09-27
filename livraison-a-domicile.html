@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Food Menu</title>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta property="og:title" content="Vide" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="Rajmahal Restaurant" />
+        <script src="js/jquery.min.js"></script>
+        <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,300,200' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/swipebox.css">
+        <script src="js/jquery.swipebox.min.js"></script> 
+        <script type="text/javascript">
+            jQuery(function ($) {
+                $(".swipebox").swipebox();
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="banner">
+            <div class="header-top">
+                <div class="container">
+                    <div class="indicat">
+                        <span><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>31 Allee Paul Lafargue / 27 Av. Chanzy 93320 Les Pabilions Sous Bous. Franch</span>
+                    </div>
+                    <div class="detail">
+                        <ul>
+                            <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> Tel: 01 48 49 67 44, Port: 06 05 82 26 11</li>
+                            <li><i class="glyphicon glyphicon-time" aria-hidden="true"></i> Ouvert 7/7j...11h30-14h30 et 18h30-23h15 </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="navigation navi">
+                    <div class="logo">
+                        <h1><a href="index.html">Rajmahal Restaurant</a></h1>
+                    </div>
+                    <div class="navigation-right">
+                        <span class="menu"><img src="images/menu.png" alt=" " /></span>
+                        <nav class="link-effect-3" id="link-effect-3" style="font-size: 11px;">
+                            <ul class="nav1 nav nav-wil">
+                                <li><a data-hover="Home" href="index.html">Home</a></li>
+                                <li class="active"><a data-hover="Menu" href="menu.html">Menu</a></li>
+                                <li><a data-hover="A" href="a-la-carte.html">A La Carte</a></li>
+                                <li><a data-hover="Livraison" href="livraison-a-domicile.html">Livraison A Domicile</a></li>
+                                <li><a data-hover="Contact" href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <!-- Script-for-menu -->
+                        <script>
+                            $("span.menu").click(function () {
+                                $("ul.nav1").slideToggle(300, function () {
+                                    // Animation complete.
+                                });
+                            });
+                        </script>
+                        <!-- End of script-for-menu -->
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!--Content-->
+        <div class="content">
+            <!--Food Menu-->
+            <div class="gallery-w3l">
+                <div class="container">
+                    <h2 class="tittle"> Our Menu</h2>
+                    <div id="main-wrap">
+                        <div class="container">
+                            <div id="wsite-content" class="wsite-elements wsite-not-footer">
+                                <h2 class="wsite-content-title" style="text-align:center;">
+                                    <font size="6" style="color: rgb(168, 46, 46);"><em>Livraison à domicile</em></font><br><br>
+                                    <font color="#6cb83a">Min de commande:&nbsp;20,00 €Les villes livrées</font>
+                                    <ul style="list-style-type: none;"><br>
+                                        <li style=""><font color="#a82e2e"><span style="line-height: 1.2; background-color: initial;">Livry Gargan</span><br></font></li>
+                                        <li style=""><font color="#a82e2e">Pavillon Sous-Bois</font></li>
+                                        <li style=""><font color="#a82e2e">Le Raincy</font></li>
+                                        <li style=""><font color="#a82e2e">Clichy Sous-Bois</font></li>
+                                        <li style=""><font color="#a82e2e">Bondy (Minimum 20 &euro;)</font></li>
+                                        <li style=""><font color="#a82e2e">Villemomble</font></li>
+                                        <li style=""><font color="#a82e2e">Aulnay Sous-Bois</font></li>
+                                        <li style=""><font color="#a82e2e">Sevran</font></li>
+                                        <li style=""><font color="#a82e2e">Montfermeil (Minimum 30 &euro;)</font></li>
+                                        <li style=""><font color="#a82e2e">Sur un Rayon de 3,5 km (Minimum 20 &euro;)</font></li>
+                                        <li style=""><font color="#a82e2e">Au dela (Minimum 30 &euro;)</font></li>
+                                    </ul>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Content-->
+                <!--Footer-->
+                <div class="footer-w3l">
+                    <div class="container">
+                        <div class="footer-grids">
+                            <div class="col-md-3 footer-grid">
+                                <h4>About</h4>
+                                <ul>
+                                    <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>31 Allee Paul Lafargue / 27 Av. Chanzy 93320 Les Pabilions Sous Bous. Franch</li>
+                                    <li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i>Tel: 01 48 49 67 44, Port: 06 05 82 26 11</li>
+                                </ul>
+                                <div class="social-icon">
+                                    <a href="#"><i class="icon"></i></a>
+                                    <a href="#"><i class="icon1"></i></a>
+                                    <a href="#"><i class="icon2"></i></a>
+                                    <a href="#"><i class="icon3"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 footer-grid">
+                                <div class="col-md-6">
+                                    <h4>Popular Items</h4>
+                                    <ul>
+                                        <li>Meilleures ventes du moment</li>
+                                        <li>Menus Midi</li>
+                                        <li>Pains Maisons</li>
+                                        <li>Salades</li>
+                                        <li>Soupes</li>
+                                        <li>Beignets</li>
+                                        <li>Plats - Poulet</li>
+                                        <li>Plats - Agneau</li>
+                                        <li>Plats - Poissons</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>&nbsp;</li>
+                                        <li>Plats - Legumes</li>
+                                        <li>Shaslik Specialities Maisons</li>
+                                        <li>Grillades</li>
+                                        <li>Biryani</li>
+                                        <li>Riz</li>
+                                        <li>Desserts</li>
+                                        <li>Boissons</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 footer-grid">
+                                <h4> Send Us A Quote</h4>
+                                <form action="#" method="post">
+                                    <p>Message</p>
+                                    <input type="text" name="Name" placeholder="" required="">
+                                    <input type="submit" value="SEND">
+                                </form>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--Footer-->
+                <div class="copy-section">
+                    <div class="container">
+                        <div class="footer-top">
+                            <p>&copy; 2017 Rajmahal Restaurant. All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
